@@ -1,0 +1,4 @@
+<h1> Show Page For: <%= @vendor.name %></h1>
+<% @sweets.each do |s| %>
+    <%= link_to s.name, sweet_path(s) %>
+<% end %>
