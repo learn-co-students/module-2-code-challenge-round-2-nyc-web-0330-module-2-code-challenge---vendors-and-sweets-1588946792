@@ -1,0 +1,13 @@
+<div class='container'>
+<h1>Show Page</h1>
+
+    <p><%= @vendor.name %></p>
+<br>
+    <h2> Currently Selling:</h2>
+    <% @vendor.sweets.each do |sweet|%>
+        <p><%=sweet.name%></p>
+        <% end %>
+
+<%= link_to "Sweet Index", sweets_path %>
+
+</div>
