@@ -1,0 +1,5 @@
+<p>Vendor Name: <%= @vendor.name %></p>
+<p>List of current sweets</p>
+<%= link_to @vendor.sweets.name, sweet_path(@vendor.id)%>
+
+<!-- #sweet_id -->
