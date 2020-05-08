@@ -1,0 +1,9 @@
+<h1>Vendor Show Page</h1>
+
+<h2>Vendor Name: <%= @vendor.name %></h2>
+
+<h2>List of Sweets Sold by Vendor</h2>
+
+<% @vendor.sweets.each do |sweet|%>
+    <li><%= link_to sweet.name, sweet_path(sweet) %></li>
+<% end %>
